@@ -25,6 +25,7 @@
             while(($line=fgets($file))!==false){
                 $parts = explode("|", trim($line));
                 echo "<h3>" . htmlspecialchars($parts[0]) . "</h3>";
+                echo "Created at: " . htmlspecialchars($parts[2]);
                 echo "<p>" . htmlspecialchars($parts[1]) . "</p>";
                 echo "<hr>";
 
